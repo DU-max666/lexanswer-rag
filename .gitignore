@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 环境与密钥（严禁入库）
+.env
+*.key
+logs/
+
+# 训练产物与模型权重（体积大 / 保密）
+finetune/output/
+*.safetensors
+*.gguf
+models/
+
+# 数据导出与临时文件
+*.tmp
+*.bak
+.DS_Store
+.idea/
+.vscode/

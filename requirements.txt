@@ -1,0 +1,32 @@
+# 法衡 · 依赖清单
+# 核心链路（语料/检索/校验/评测/服务）在裸环境即可运行：
+# 向量模型、Milvus、OCR 等均为可选，缺失自动降级本地 mock。
+
+# ---- Web 服务 ----
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+# ---- 配置与工具 ----
+PyYAML>=6.0
+
+# ---- 文档解析（可选：仅 txt/md 时不需要）----
+pypdf>=4.0            # PDF 文本抽取
+python-docx>=1.1      # Word 解析
+# rapidocr-onnxruntime>=1.3   # 扫描件 OCR（可选，内网离线引擎，体积大故注释）
+
+# ---- 向量检索（可选：未安装则用 InMemoryStore）----
+pymilvus>=2.4         # Milvus 客户端
+
+# ---- 嵌入/精排/意图（可选：需 GPU 或 CPU 大内存，未装则哈希 mock 降级）----
+FlagEmbedding>=1.2    # BGE-M3 稠密+稀疏、BGE-Reranker
+transformers>=4.44    # BERT 意图闸门（微调后检查点）
+
+# ---- QLoRA 微调（可选：仅训练机安装）----
+# torch>=2.3
+# transformers>=4.44
+# peft>=0.11
+# bitsandbytes>=0.43
+# trl>=0.9
+# accelerate>=0.30
+# datasets>=2.19
