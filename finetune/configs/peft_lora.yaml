@@ -1,0 +1,39 @@
+# 法衡 · QLoRA 微调配置（单卡 RTX 4090 24GB 实测配方）
+# train_qlora.py 读取本文件打底，命令行参数可逐项覆盖。
+
+base_model: Qwen/Qwen2.5-7B-Instruct
+dataset_path: finetune/output/demo_dataset.jsonl
+output_dir: finetune/output/lexanswer-qlora
+
+# ---- 训练轮次与批量 ----
+epochs: 3
+seq_len: 2048
+per_device_batch: 1
+grad_accum: 16            # 有效 batch = 1 × 16 = 16
+learning_rate: 0.0002
+lr_scheduler: cosine
+warmup_ratio: 0.03
+
+# ---- LoRA 适配器 ----
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.05
+# attention 投影 + MLP 全挂，可训参数约 0.57%
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# ---- QLoRA 量化 ----
+nf4: true                 # NormalFloat4
+double_quant: true        # 量化常数再量化，省约 0.8GB
+compute_dtype: bfloat16
+gradient_checkpointing: true
+
+# ---- 日志与保存 ----
+logging_steps: 10
+save_steps: 200
