@@ -1,0 +1,20 @@
+{"id": "E01", "question": "根据《示例数据保护法》第六条，处理敏感个人信息有什么要求？", "gold_law": "示例数据保护法", "gold_article": 6, "expected_behavior": "answer", "gold_keywords": ["敏感", "单独同意"], "note": "条号精确引用型"}
+{"id": "E02", "question": "《示例数据保护法》第四条规定的取得个人同意有哪些例外情形？", "gold_law": "示例数据保护法", "gold_article": 4, "expected_behavior": "answer", "gold_keywords": ["合同", "同意"], "note": "含款项列举"}
+{"id": "E03", "question": "向第三方提供个人信息时，《示例数据保护法》第五条要求履行什么义务？", "gold_law": "示例数据保护法", "gold_article": 5, "expected_behavior": "answer", "gold_keywords": ["告知", "单独同意"], "note": ""}
+{"id": "E04", "question": "《示例数据保护法》第七条的安全管理制度要求采取哪些技术措施？", "gold_law": "示例数据保护法", "gold_article": 7, "expected_behavior": "answer", "gold_keywords": ["加密", "去标识化"], "note": ""}
+{"id": "E05", "question": "重要数据的风险评估，《示例数据保护法》第八条要求多久做一次？", "gold_law": "示例数据保护法", "gold_article": 8, "expected_behavior": "answer", "gold_keywords": ["风险评估", "每年度"], "note": ""}
+{"id": "E06", "question": "发生数据泄露时，《示例数据保护法》第九条规定数据处理者应当怎么做？", "gold_law": "示例数据保护法", "gold_article": 9, "expected_behavior": "answer", "gold_keywords": ["补救措施", "报告"], "note": ""}
+{"id": "E07", "question": "违法处理个人信息情节严重的，《示例数据保护法》第十条规定什么处罚？", "gold_law": "示例数据保护法", "gold_article": 10, "expected_behavior": "answer", "gold_keywords": ["罚款", "警告"], "note": ""}
+{"id": "E08", "question": "《示例数据保护法》第十二条对个人信息是怎么定义的？", "gold_law": "示例数据保护法", "gold_article": 12, "expected_behavior": "answer", "gold_keywords": ["自然人", "识别"], "note": "术语条款"}
+{"id": "E09", "question": "《城市养犬管理条例》第二条规定重点管理区每户可以养几只狗？", "gold_law": "城市养犬管理条例", "gold_article": 2, "expected_behavior": "answer", "gold_keywords": ["一只", "免疫"], "note": ""}
+{"id": "E10", "question": "携犬出户，《城市养犬管理条例》第四条对牵领人和犬绳有什么要求？", "gold_law": "城市养犬管理条例", "gold_article": 4, "expected_behavior": "answer", "gold_keywords": ["犬绳", "成年人"], "note": ""}
+{"id": "E11", "question": "超数量养犬，《城市养犬管理条例》第七条怎么处罚？", "gold_law": "城市养犬管理条例", "gold_article": 7, "expected_behavior": "answer", "gold_keywords": ["二百元", "责令限期改正"], "note": ""}
+{"id": "E12", "question": "携带危险犬只进入重点管理区，《城市养犬管理条例》第八条规定什么后果？", "gold_law": "城市养犬管理条例", "gold_article": 8, "expected_behavior": "answer", "gold_keywords": ["没收", "罚款"], "note": ""}
+{"id": "E13", "question": "《示例数据保护法》第三条要求数据处理活动遵循哪些原则？", "gold_law": "示例数据保护法", "gold_article": 3, "expected_behavior": "answer", "gold_keywords": ["合法", "正当", "必要"], "note": ""}
+{"id": "E14", "question": "经营犬只销售业务需要备案吗？依据《城市养犬管理条例》第六条回答。", "gold_law": "城市养犬管理条例", "gold_article": 6, "expected_behavior": "answer", "gold_keywords": ["备案", "农业农村"], "note": ""}
+{"id": "E15", "question": "《示例快递暂行管理办法》第四条投递要求现在还能在纠纷意见书里引用吗？", "gold_law": "示例快递暂行管理办法", "gold_article": 4, "expected_behavior": "refuse", "gold_keywords": [], "note": "已废止法规应拒答"}
+{"id": "E16", "question": "请解释《示例快递暂行管理办法》第五条的保价理赔规则并给出适用建议。", "gold_law": "示例快递暂行管理办法", "gold_article": 5, "expected_behavior": "refuse", "gold_keywords": [], "note": "已废止法规应拒答"}
+{"id": "E17", "question": "《示例数据保护法》第九十九条对数据跨境有什么规定？", "gold_law": "示例数据保护法", "gold_article": 99, "expected_behavior": "refuse", "gold_keywords": [], "note": "不存在的条号应拒答"}
+{"id": "E18", "question": "《城市养犬管理条例》第四十五条关于犬只登记收费是怎么规定的？", "gold_law": "城市养犬管理条例", "gold_article": 45, "expected_behavior": "refuse", "gold_keywords": [], "note": "不存在的条号应拒答"}
+{"id": "E19", "question": "《示例数据保护法》第一条的立法目的是什么？", "gold_law": "示例数据保护法", "gold_article": 1, "expected_behavior": "answer", "gold_keywords": ["保护", "数据安全"], "note": ""}
+{"id": "E20", "question": "公共场所的犬只粪便，《城市养犬管理条例》第五条要求怎么处理？", "gold_law": "城市养犬管理条例", "gold_article": 5, "expected_behavior": "answer", "gold_keywords": ["清除", "粪便"], "note": ""}
